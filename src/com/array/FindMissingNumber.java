@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class FindMissingNumber {
 	public static void main(String[] args) {
 
-		int arr[] = { 1, 2, 3, 4, 5, 6, 8, 9 };
+		int arr[] = { 5, 6, 8, 9, 1, 2, 3, 4 };
 
 		int temp[] = new int[arr.length + 1];
 
