@@ -49,6 +49,7 @@ public class Test1 {
 				tempVar = "";
 			} else {
 				tempVar = tempVar + String.valueOf(input.charAt(i));
+
 			}
 		}
 
