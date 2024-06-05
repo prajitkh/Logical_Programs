@@ -2,40 +2,36 @@ package com.string;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class ArrayAnagramString {
 
 	public static void main(String[] args) {
 
 		String[] str = { "eat", "tea", "tan", "ate", "nat", "bat" };
+		List<List<String>> groupAnagrams = groupAnagrams(str);
 
-		String temp = "abc";
-		String temp2 = "cba";
-		Arrays.sort(temp.toCharArray());
-		// System.out.println(temp);
+		System.out.println(groupAnagrams);
 
-		Arrays.sort(temp2.toCharArray());
-		// System.out.println(temp2);
+	}
 
-		Arrays.sort(str);
-		int arr2[] = new int[str.length];
+	private static List<List<String>> groupAnagrams(String[] str) {
 
-		for (int i = 0; i < str.length; i++) {
-			List<String> test = new ArrayList<>();
-			Arrays.sort(str[i].toCharArray());
-			// System.out.println(str[i]);
-			for (int j = i + 1; j < str.length; j++) {
-				Arrays.sort(str[j].toCharArray());
+		Map<String, List<String>> map = new HashMap<>();
+		for (String s : str) {
 
-				// System.out.println(str[j]);
-				if (str[i].toCharArray() == (str[j].toCharArray())) {
-
-					System.out.println(str[i] + " ** " + str[j]);
-				}
+			char[] charArray = s.toCharArray();
+			Arrays.sort(charArray);
+			String valueOf = String.valueOf(charArray);
+			if (!map.containsKey(valueOf)) {
+				map.put(valueOf, new ArrayList<String>());
 			}
 
-		}
+			map.get(valueOf).add(s);
 
+		}
+		return new ArrayList<>(map.values());
 	}
 }
