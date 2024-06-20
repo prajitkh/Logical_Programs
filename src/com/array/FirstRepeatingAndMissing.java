@@ -3,8 +3,8 @@ package com.array;
 public class FirstRepeatingAndMissing {
 
 	static void printTwoElements(int[] arr, int n) {
-		int[] temp = new int[n]; // Creating temp array of size n
-									// with initial values as 0.
+		int[] temp = new int[n];
+
 		int repeatingNumber = -1;
 		int missingNumber = -1;
 
@@ -21,8 +21,8 @@ public class FirstRepeatingAndMissing {
 			}
 		}
 
-		System.out.println("The repeating number is " + repeatingNumber + ".");
-		System.out.println("The missing number is " + missingNumber + ".");
+		System.out.println("The repeating number is " + repeatingNumber);
+		System.out.println("The missing number is " + missingNumber);
 	}
 
 	public static void main(String[] args) {
