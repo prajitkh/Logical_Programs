@@ -16,7 +16,7 @@ public class FindNullOrEmptyInList {
 		// System.out.println(collect2);
 		collect2.forEach(System.out::println);
 		int arr[] = { 3, 1, 3 };
-		FindMissing(arr);
+
 	}
 
 }
