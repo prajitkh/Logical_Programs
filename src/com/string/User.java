@@ -27,4 +27,15 @@ public class User implements Serializable {
 		this.name = name;
 	}
 
+	public User() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public User(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+
 }

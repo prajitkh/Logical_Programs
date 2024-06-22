@@ -1,8 +1,15 @@
 package com.java8;
 
 import java.util.Arrays;
+import java.util.stream.IntStream;
 
 public class SumOF {
+	static int staticVariable = 10;
+
+	static {
+		staticVariable = 20;
+		System.out.println("static block " + staticVariable);
+	}
 
 	public static void main(String[] args) {
 
@@ -15,6 +22,8 @@ public class SumOF {
 		String temp = "apple";
 		long count = Arrays.stream(arr1).filter(e -> e.equals(temp)).count();
 		System.out.println("count " + count);
+
+		IntStream.rangeClosed(1, 10).forEach(System.out::println);
 
 	}
 
