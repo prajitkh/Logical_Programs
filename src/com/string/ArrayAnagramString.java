@@ -15,8 +15,6 @@ public class ArrayAnagramString {
 
 		System.out.println(groupAnagrams);
 
-
-		() -> System.out.println("Zero parameter lambda");
 	}
 
 	private static List<List<String>> groupAnagrams(String[] str) {
