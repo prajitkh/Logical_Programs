@@ -45,7 +45,7 @@ public class ReverseString {
 		Reverse("Prajit khawshi"); // output ihswahk tijarP
 
 		Reverse("Nimap infotech"); // output pamiN hcetofni
-		Reverse2("CORE");
+		Reverse2("CORE infotech");
 
 	}
 
