@@ -7,21 +7,21 @@ import java.util.Date;
 
 public class Overload {
 
-	public void m1() {
-		System.out.println("no arg ");
-	}
+//	public void m1() {
+//		System.out.println("no arg ");
+//	}
 
 	public void m1(int d) {
 		System.out.println("int ");
 	}
 
-	public void m1(Integer i) {
+	public void m1(int... is) {
 		System.out.println("Number");
 	}
 
 	public static void main(String[] args) {
 		Overload overload = new Overload();
-		overload.m1(1);
+		overload.m1();
 		overload.m1('a');
 
 		SimpleDateFormat dateFormat = new SimpleDateFormat();

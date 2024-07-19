@@ -19,9 +19,30 @@ public class Test {
 
 	}
 
-	public static void main(String[] args) {
-		String data = data();
-		System.out.println(data);
+	static int val = 10;
+
+	public static void getdata() {
+		val = 20;
+		System.out.println(val);
 	}
 
+	public static void main(String[] args) {
+
+		int a = 20;
+
+		String data = data();
+		System.out.println(data);
+		getdata();
+		System.out.println(val);
+
+		try {
+			int i = 1 / 0;
+
+		} catch (Exception e) {
+			e.getMessage();
+		} finally {
+			System.out.println("tessst");
+		}
+
+	}
 }
