@@ -10,8 +10,6 @@ public class RegexExample {
 		final String ss = "test";
 		String s1 = new String("test");
 
-		ss = "suraj";
-
 		System.out.println(ss == s1);
 		String htmlContent = "<p><a style=\"color:blue\" emailid:\"wojivib114@egela.com|63\" class=\"wysiwyg-mention\" data-mention data-value=\"wojivib wojivib\">@wojivib wojivib</a>  2sr comment check,</p>\n"
 				+ "<p><a style=\"color:blue\" emailid:\"wojivib114@egela.com|63\" class=\"wysiwyg-mention\" data-mention data-value=\"wojivib wojivib\">@wojivib wojivib</a>  3rs comment check</p>";
