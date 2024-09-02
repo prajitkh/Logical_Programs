@@ -51,11 +51,17 @@ public class SampleThread implements Runnable {
 		Thread thred1 = new Thread(sampleThread);
 		thred1.start();
 
-		for (int i = 0; i < 10; i++) {
-			Thread.sleep(1000);
-			Thread thred = new Thread(sampleThread);
-			thred.start();
-		}
+//		for (int i = 0; i < 10; i++) {
+//			Thread.sleep(1000);
+//			Thread thred = new Thread(sampleThread);
+//			thred.start();
+//		}
+
+		String st = new String("Welcome");
+		String st1 = "Welcome";
+		String st2 = "Welcome";
+
+		System.out.println(st2 == st1);
 
 	}
 }

@@ -20,6 +20,6 @@ public class PalindromString {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(isPalindrom("KPK"));
+		System.out.println(isPalindrom("KqPK"));
 	}
 }
